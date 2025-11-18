@@ -1,0 +1,223 @@
+
+/*Start of Navbar styling*/
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 15px 10px 10px 10px;
+}
+
+nav{
+    margin-top: 0px;
+    box-shadow: 0px 2px 5px rgb(15, 218, 160);
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+a:hover, .active{
+    background-color: rgb(59, 53, 53);
+    color: rgb(15, 218, 160);
+    box-shadow: 0px 7px 5px rgb(15, 218, 160);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(2, 29, 12);
+}
+
+@media(max-width:700px){
+    nav ul li{
+        display: grid;
+        grid-column: 1/-1;
+    }
+}
+
+/*End of Navbar styling*/
+
+/*Start of home page body styling*/
+
+.index main h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 148, 109);
+    text-shadow: 5px 5px 5px;
+    text-align: center;
+}
+
+.index{
+    background-image: url(Images/my_image.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.index h3{
+    color: rgb(15, 218, 160);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.index main h2{
+    color: rgba(134, 234, 201, 0.805);
+    font-family: sans-serif;
+}
+
+
+.index main div{
+    text-align: center;
+    border: 2px solid rgb(1, 38, 10);
+    border-radius: 25%;
+    padding: 25px;
+    margin: auto 200px;
+}
+
+/*End of home page body styling*/
+
+/*Start of Projects page styling*/
+body .projects{
+    background-image: url(Images/background_img.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.projects h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 148, 109);
+    text-shadow: 5px 5px 5px;
+    text-align: center;
+}
+#products hr{
+    border: 1px solid lightgray;
+    margin-top: 4px;
+}
+#products .product{
+    width: 300px;
+    margin: 20px;
+}
+#products .product img{
+    width: 300px;
+    height: 300px;
+}
+#products .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+#products .container hr{
+    border: 1px solid rgb(15, 218, 160);
+}
+#products .product h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(15, 218, 160);
+}
+#products .product .product-description{
+    color: rgb(195, 236, 182);
+}
+#products .product h4{
+    color: rgb(15, 218, 160);
+}
+/*End of Projects page styling*/
+
+/*Start of About page styling*/
+body .about{
+    background-image: url(Images/background_img.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.about h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 148, 109);
+    text-shadow: 5px 5px 5px;
+    text-align: center;
+}
+
+.about p{
+    color: rgb(195, 236, 182);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows:350px;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.about .teaching-image{
+    grid-column: 2/3;
+    height: 300px;
+    width: fit-content;
+}
+
+.about .p-about{
+    grid-column: 3/3;
+}
+
+.about .tennis-image{
+    grid-column: 2/3;
+}
+
+.about .soccer-image{
+    grid-column: 3/-1;
+    grid-row: 2;
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+
+/*End of About page styling*/
+
+/*Start of Contact Page Styling*/
+
+body .contact{
+    background-image: url(Images/background_img.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.contact h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 148, 109);
+    text-shadow: 5px 5px 5px;
+    text-align: center;
+}
+
+.contact h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 148, 109);
+    text-align: center;
+}
+
+.contact p{
+    margin-top: 50px;
+    padding-left: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(195, 236, 182);
+}
+
+.contact dl{
+    padding-left: 75px;
+    line-height: 50px;
+    color: rgb(195, 236, 182);
+}
+
+.contact .container{
+     border: 2px solid rgb(18, 77, 0);
+     border-radius: 30px;
+     padding-right: 50px;
+     margin: 50px;
+     margin-right: 750px;
+}
+
+/*End of Contact Page Styling*/
